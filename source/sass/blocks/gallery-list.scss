@@ -1,6 +1,9 @@
 .gallery-list--wrapper {
     width: 100%;
     height: 100%;
+    @media (min-width: $tablet-width) {
+        display: flex;
+    }
 }
 
 .gallery-list__item--wrapper {
@@ -9,5 +12,13 @@
 }
 
 .gallery-list__item--big-cat {
-    background: url("../img/big-cat.png");
+    background: url("../../img/big-cat.png");
+    width: 50%;
+}
+
+.gallery-list__item--small-cat {
+    background: url("../../img/small-cat.png");
+    width: 50%;
+    background-position: 0 0;
+    background-size: 100%;
 }

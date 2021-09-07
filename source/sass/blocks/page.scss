@@ -8,6 +8,12 @@
     font-weight: 400;
     color: $base-color-black;
     min-height: 100%;
+    @media (min-width: $tablet-width) {
+        width: 768px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 1200px;
+    }
 }
 
 .page__link {
