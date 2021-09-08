@@ -117,19 +117,19 @@
 }
 
 .features-list__item--healthy-food::before {
-    background: url("../img/healthy-food.svg");
+    background: url("../../img/healthy-food.svg");
 }
 
 .features-list__item--powder-food::before {
-    background: url("../img/powder-food.svg");
+    background: url("../../img/powder-food.svg");
 }
 
 .features-list__item--hearty-food::before {
-    background: url("../img/hearty-food.svg");
+    background: url("../../img/hearty-food.svg");
 }
 
 .features-list__item--time-food::before {
-    background: url("../img/time-food.svg");
+    background: url("../../img/time-food.svg");
 }
 
 @media (min-width: $tablet-width) {

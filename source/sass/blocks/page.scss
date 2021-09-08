@@ -8,6 +8,7 @@
     font-weight: 400;
     color: $base-color-black;
     min-height: 100%;
+    overflow-x: hidden;
     @media (min-width: $tablet-width) {
         width: 768px;
     }
