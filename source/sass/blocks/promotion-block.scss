@@ -4,7 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background: url("../../img/catalog/gift-photo.jpg");
+    // background: url("../../img/catalog/gift-photo.jpg");
+    background: url("../../img/catalog/gift-photo.png");
     position: relative;
     &::before {
         content: "";
@@ -33,5 +34,6 @@
         top: -125px;
         left: 40px;
         background: url("../../img/catalog/icon-gift.svg");
+        //  background: url("../../img/catalog/icon-gift.png");
     }
 }

@@ -8,3 +8,30 @@
         background: url("../../img/main/marker.png");
     }
 }
+
+.map {
+    width: 320px;
+    height: 362px;
+    @media (min-width: $tablet-width) {
+        width: $tablet-width;
+        height: 400px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 1440px;
+        height: 400px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .map--wrapper {
+        position: relative;
+        left: -100px;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 57px;
+            height: 53px;
+            background: url("../img/marker.png");
+        }
+    }
+}

@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (min-width: $tablet-width) {
+        justify-content: initial;
+        width: 20%;
+    }
 }
 
 .social-block--wrapper {
@@ -16,4 +20,10 @@
     line-height: 18px;
     color: $special_dark-grey;
     font-family: "Arial", "Helvetica", sans-serif;
+    @media (min-width: $tablet-width) {
+        width: 80%;
+    }
+    @media (min-width: $desktop-width) {
+        width: 60%;
+    }
 }

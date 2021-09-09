@@ -1,19 +1,49 @@
 .varieties-list {
-    width: 320;
+    width: 320px;
+    @media (min-width: $tablet-width) {
+        width: 768px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 100%;
+        display: flex;
+    }
 }
 
 .varieties-list--wrapper {
     margin-top: 25px;
+    @media (min-width: $tablet-width) {
+        margin-top: 355px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-top: 92px;
+    }
 }
 
 .varieties-list__item {
     background-color: $basic_grey;
     width: 280px;
+    @media (min-width: $tablet-width) {
+        width: 708px;
+        height: 322px;
+        padding-top: 50px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 570px;
+        height: 352px;
+        padding-top: 50px;
+    }
 }
 
 .varieties-list__item--wrapper {
     margin: 0 auto;
     margin-bottom: 20px;
+}
+
+@media (min-width: $desktop-width) {
+    .varieties-list__image {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .varieties-list__image--skinny-cat {
@@ -44,26 +74,106 @@
     }
 }
 
+@media (min-width: $tablet-width) {
+    .varieties-list__image--heavy-cat {
+        padding-top: 30px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 410px;
+            top: 20px;
+            width: 268px;
+            height: 200px;
+            background: url("../../img/heavy-cat-tablet.svg");
+        }
+    }
+    .varieties-list__image--skinny-cat {
+        padding-top: 30px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 450px;
+            top: 30px;
+            width: 200px;
+            height: 211px;
+            background: url("../../img/skinny-cat-tablet.svg");
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .varieties-list__image--heavy-cat {
+        padding-top: 30px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 32px;
+            top: 0;
+            width: 134px;
+            height: 100px;
+            background: url("../../img/heavy-cat-desktop.svg");
+        }
+    }
+    .varieties-list__image--skinny-cat {
+        padding-top: 30px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 52px;
+            top: -10px;
+            width: 100px;
+            height: 106px;
+            background: url("../../img/skinny-cat-desktop.svg");
+        }
+    }
+}
+
 .varieties-list__headline {
     font-size: 24px;
     line-height: 37px;
     color: $base-color-black;
+    @media (min-width: $tablet-width) {
+        font-size: 36px;
+        line-height: 36px;
+    }
 }
 
 .varieties-list__headline--wrapper {
     margin-left: 100px;
+    @media (min-width: $tablet-width) {
+        margin-left: 53px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-left: 10px;
+    }
 }
 
 .varieties-list__block {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    @media (min-width: $tablet-width) {
+        width: 45%;
+    }
+    @media (min-width: $desktop-width) {
+        width: 80%;
+    }
 }
 
 .varieties-list__block--wrapper {
     padding-left: 20px;
     padding-right: 30px;
     padding-top: 20px;
+    @media (min-width: $tablet-width) {
+        margin-left: 33px;
+    }
+    @media (min-width: $desktop-width) {
+        padding-top: 73px;
+    }
 }
 
 .varieties-list__text {
@@ -71,6 +181,10 @@
     line-height: 18px;
     font-family: "Arial", "Helvetica", sans-serif;
     color: $special_dark-grey;
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .varieties-list__text--wrapper {
@@ -83,6 +197,20 @@
         height: 1px;
         width: 240px;
         background-color: $light_grey;
+    }
+    @media (min-width: $tablet-width) {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.varieties-list__link {
+    font-size: 16px;
+    line-height: 16px;
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
     }
 }
 
@@ -97,6 +225,12 @@
         height: 12px;
         top: 7px;
         left: 90px;
-        background: url("../../img/main/icon-arrow.svg");
+        background: url("../../img/icon-arrow.svg");
+    }
+    @media (min-width: $tablet-width) {
+        &::after {
+            top: 12px;
+            left: 120px;
+        }
     }
 }

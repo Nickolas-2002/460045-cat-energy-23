@@ -2,6 +2,14 @@
     display: flex;
     justify-content: space-around;
     padding: 14px 80px 24px 80px;
+    @media (min-width: $tablet-width) {
+        width: 20%;
+        align-items: center;
+        padding: 24px 0px 24px 0px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 15%;
+    }
 }
 
 .social-list--wrapper {
@@ -23,5 +31,17 @@
         top: 60px;
         left: 20px;
         background-color: $light_grey;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .social-list--wrapper {
+        position: relative;
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
     }
 }
