@@ -18,7 +18,7 @@
     }
 }
 
-.promotion-block__text {
+.promotion-block__text--wrapper {
     line-height: 20px;
     font-family: "Arial", "Helvetica", sans-serif;
     color: $basic-white;
@@ -35,5 +35,73 @@
         left: 40px;
         background: url("../../img/catalog/icon-gift.svg");
         //  background: url("../../img/catalog/icon-gift.png");
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .promotion-block--wrapper {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background: url("../../img/catalog/gift-photo.jpg");
+        background: url("../../img/catalog/gift-photo-tablet.png");
+        position: relative;
+        &::before {
+            display: none;
+        }
+    }
+    .promotion-block__text--wrapper {
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 350px;
+        &::before {
+            top: -10px;
+            left: -350px;
+            background: url("../../img/catalog/icon-gift.svg");
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .promotion-block--wrapper {
+        width: 245px;
+        height: 289px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        // background: url("../../img/catalog/gift-photo.jpg");
+        background: url("../../img/catalog/gift-photo.png");
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 280px;
+            height: 1px;
+            top: -39px;
+            left: 0;
+            background-color: $special_border-light-grey;
+        }
+    }
+    .promotion-block__text--wrapper {
+        line-height: 20px;
+        font-family: "Arial", "Helvetica", sans-serif;
+        color: $basic-white;
+        max-width: 161px;
+        text-align: center;
+        margin-bottom: 43px;
+        margin-left: 0;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 78px;
+            height: 80px;
+            top: -125px;
+            left: 40px;
+            background: url("../../img/catalog/icon-gift.svg");
+            //  background: url("../../img/catalog/icon-gift.png");
+        }
     }
 }

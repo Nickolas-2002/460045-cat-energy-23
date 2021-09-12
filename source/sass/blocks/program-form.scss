@@ -10,6 +10,11 @@
         left: 0;
         background-color: $light_grey;
     }
+    @media (min-width: $tablet-width) {
+        &::before {
+            display: none;
+        }
+    }
 }
 
 .program-form__headline {
@@ -18,6 +23,10 @@
     color: inherit;
     margin-bottom: 37px;
     position: relative;
+    @media (min-width: $desktop-width) {
+        font-size: 60px;
+        line-height: 60px;
+    }
 }
 
 .program-form__text {
@@ -26,4 +35,8 @@
     color: inherit;
     text-transform: uppercase;
     margin-bottom: 39px;
+    @media (min-width: $desktop-width) {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }

@@ -9,6 +9,11 @@
     }
 }
 
+.page-footer--dark {
+    background-color: $basic_grey;
+    margin-top: 50px;
+}
+
 .page-footer__contacts {
     display: flex;
     padding: 28px 19px 28px 19px;
@@ -24,7 +29,7 @@
         justify-content: space-between;
     }
     .page-footer__contacts--wrapper {
-        margin: 0 51px;
+        padding: 62px 32px 52px 32px;
     }
 }
 
@@ -67,7 +72,7 @@
 
 @media (min-width: $desktop-width) {
     .page-footer__footer {
-        width: 1200px;
+        width: 1440px;
     }
 }
 

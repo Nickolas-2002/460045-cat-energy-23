@@ -2,6 +2,14 @@
     padding: 22px 20px 0 20px;
 }
 
+@media (min-width: $desktop-width) {
+    .contacts-data__block {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
 .contacts-data__headline {
     font-size: 24px;
     line-height: 26px;
@@ -19,6 +27,62 @@
     }
 }
 
+@media (min-width: $tablet-width) {
+    .contacts-data__headline {
+        font-size: 36px;
+        line-height: 36px;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            top: 20px;
+            left: -50px;
+            background-color: $basic_green;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 136px;
+            height: 2px;
+            top: 20px;
+            right: 20px;
+            background-color: $basic_green;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .contacts-data__headline {
+        font-size: 36px;
+        line-height: 36px;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 70px;
+            height: 2px;
+            top: 20px;
+            left: -100px;
+            background-color: $basic_green;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 778px;
+            height: 2px;
+            top: 20px;
+            right: 20px;
+            background-color: $basic_green;
+        }
+    }
+    .contacts-data--wrapper {
+        margin-bottom: 65px;
+    }
+    .contacts-data__headline--wrapper {
+        margin-bottom: 76px;
+    }
+}
+
 .contacts-data__wrapper {
     color: $special_dark-grey;
     text-transform: uppercase;
@@ -27,6 +91,9 @@
     margin-bottom: 14px;
     &:last-child {
         margin-bottom: 0;
+    }
+    @media (min-width: $desktop-width) {
+        width: 50%;
     }
 }
 
@@ -38,12 +105,31 @@
     box-sizing: border-box;
     margin-left: 10px;
     font-family: inherit;
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .contacts-data__phone-input {
+        width: 472px;
+    }
+    .contacts-data__email-input {
+        width: 486px;
+    }
 }
 
 .contacts-data__email {
     width: 25%;
+    @media (min-width: $desktop-width) {
+        width: 8%;
+    }
 }
 
 .contacts-data__phone {
     width: 35%;
+    @media (min-width: $desktop-width) {
+        width: 10%;
+    }
 }

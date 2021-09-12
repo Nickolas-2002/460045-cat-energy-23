@@ -3,6 +3,13 @@
     font-size: 12px;
     line-height: 16px;
     color: $special_dark-grey;
+    @media (min-width: $tablet-width) {
+        width: 225px;
+    }
+    @media (min-width: $desktop-width) {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 .additional-table__rows {

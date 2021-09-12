@@ -10,12 +10,22 @@
         left: 0;
         background-color: $light_grey;
     }
+    @media (min-width: $tablet-width) {
+        width: 92%;
+        border: 1px solid $special_border-grey;
+        &::after {
+            display: none;
+        }
+    }
 }
 
 .variables-list__item {
     color: $special_dark-grey-second;
-    margin-bottom: 25px;
     text-transform: uppercase;
+}
+
+.variables-list__item--wrapper {
+    margin-bottom: 25px;
 }
 
 .variables-list__option {
@@ -24,6 +34,10 @@
     margin-left: 46px;
     margin-bottom: 25px;
     position: relative;
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .variables-list__input-radio+.variables-list__option::before {

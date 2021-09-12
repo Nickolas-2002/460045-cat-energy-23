@@ -9,6 +9,9 @@
         top: 180px;
         left: 0;
         background-color: $light_grey;
+        @media (min-width: $tablet-width) {
+            display: none;
+        }
     }
 }
 
@@ -28,10 +31,22 @@
     padding: 13px 15px 14px 15px;
     width: 100%;
     box-sizing: border-box;
+    @media (min-width: $tablet-width) {
+        padding: 17px 15px 18px 15px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    @media (min-width: $desktop-width) {
+        height: 52px;
+    }
 }
 
 .data-list__option {
     margin-right: 10px;
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .data-list__option--name {

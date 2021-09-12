@@ -3,6 +3,12 @@
     // outline-offset: -10px;
     color: $base-color-black;
     padding: 20px 20px 0 20px;
+    @media (min-width: $tablet-width) {
+        padding: 0;
+    }
+    @media (min-width: $desktop-width) {
+        width: 73%;
+    }
 }
 
 .additional__headline {
@@ -18,5 +24,57 @@
         top: 15px;
         right: -22px;
         background-color: $basic_green;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .additional__headline {
+        font-size: 36px;
+        line-height: 36px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            top: 20px;
+            left: -50px;
+            background-color: $basic_green;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 328px;
+            height: 2px;
+            top: 25px;
+            right: -22px;
+            background-color: $basic_green;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .additional__headline {
+        font-size: 36px;
+        line-height: 36px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 70px;
+            height: 2px;
+            top: 25px;
+            left: -120px;
+            background-color: $basic_green;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 957px;
+            height: 2px;
+            top: 25px;
+            left: 370px;
+            background-color: $basic_green;
+        }
     }
 }

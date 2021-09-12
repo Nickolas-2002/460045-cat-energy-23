@@ -1,4 +1,7 @@
 .promotion--wrapper {
     padding: 0 20px 0 20px;
     margin-top: 39px;
+    @media (min-width: $desktop-width) {
+        padding: 0;
+    }
 }
