@@ -44,18 +44,18 @@
     // }
 }
 
-.main-nav__logo {
-    background: url("../../img/logo-mobile.svg");
-    width: 33px;
-    height: 38px;
-    @media (min-width: $tablet-width) {
-        width: 174px;
-        height: 52px;
-        background: url("../../img/logo-tablet.svg");
-    }
-    @media (min-width: $desktop-width) {
-        width: 202px;
-        height: 59px;
-        background: url("../../img/logo-desktop.svg");
-    }
-}
+// .main-nav__logo {
+//     background: url("../../img/logo-mobile.svg");
+//     width: 33px;
+//     height: 38px;
+//     @media (min-width: $tablet-width) {
+//         width: 174px;
+//         height: 52px;
+//         background: url("../../img/logo-tablet.svg");
+//     }
+//     @media (min-width: $desktop-width) {
+//         width: 202px;
+//         height: 59px;
+//         background: url("../../img/logo-desktop.svg");
+//     }
+// }
