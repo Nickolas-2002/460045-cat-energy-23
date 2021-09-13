@@ -117,8 +117,6 @@
     }
 }
 
-
-}
 .products-list__more-products {
     background: none;
     border: none;
@@ -129,11 +127,13 @@
         height: 34%;
     }
 }
+
 @media (min-width: $tablet-width) {
     .products-list__text-block {
         height: 38%;
     }
 }
+
 .products-list__headline-more {
     font-size: 16px;
     line-height: 20px;
@@ -141,12 +141,14 @@
     color: $base-color-dark;
     margin: 20px auto 8px;
 }
+
 .products-list__text {
     font-size: 12px;
     line-height: 16px;
     color: $special_dark-grey;
     margin: 0 auto;
 }
+
 .products-list__button-show {
     background-color: $basic_grey;
     color: $special_dark-grey;
