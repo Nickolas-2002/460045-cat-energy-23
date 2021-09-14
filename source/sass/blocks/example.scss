@@ -40,7 +40,6 @@
     color: $special_dark-grey;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Arial", "Helvetica", sans-serif;
 }
 
 .example__headline-total {
@@ -124,7 +123,6 @@
     color: $special_dark-grey;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Arial", "Helvetica", sans-serif;
     @media (min-width: $tablet-width) {
         font-size: 16px;
         line-height: 24px;
@@ -166,5 +164,459 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+// ---------------------------------- TEST ---------------------------------------
+.stick-param {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.stick-param__key {
+    position: relative;
+    z-index: 1;
+    align-self: center;
+    max-width: calc(100% - 68px);
+    margin: -8px 0 0;
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: lowercase;
+    background-color: inherit;
+}
+
+.stick-param__value {
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 24px;
+    line-height: 1;
+    color: #111;
+    text-transform: uppercase;
+    border: 1px solid #cdcdcd;
+}
+
+.example {
+    position: relative;
+    padding: 10px 0 36px;
+    background-color: #f2f2f2;
+}
+
+.example__content,
+.example__inner,
+.example__params {
+    background-color: inherit;
+}
+
+.example__params {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    margin: 0 0 40px;
+}
+
+.example__param {
+    width: calc(50% - 16px);
+    background-color: inherit;
+}
+
+.example__param-addit {
+    width: 100%;
+    margin-top: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.example__param-addit dd,
+.example__param-addit dt {
+    display: inline;
+    margin: 0;
+}
+
+.example__compare {
+    background-color: inherit;
+}
+
+.compare {
+    padding: 0 20px;
+}
+
+.compare__list {
+    position: relative;
+    display: table;
+    width: 280px;
+    height: 240px;
+    margin: 0 auto 26px;
+    padding: 0;
+    background-color: inherit;
+}
+
+.compare__item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background-color: inherit;
+}
+
+.compare__item img {
+    height: 240px;
+}
+
+.compare__item--after {
+    width: 0;
+}
+
+.compare__after-checker:checked~.compare__list .compare__item--after {
+    width: 100%;
+}
+
+.compare__bar {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.compare__scale {
+    position: relative;
+    z-index: 1;
+    display: none;
+    flex-shrink: 0;
+    width: 402px;
+    height: 6px;
+    margin: 6px 35px;
+}
+
+.compare__scale::before {
+    position: absolute;
+    top: 0;
+    right: -13px;
+    bottom: 0;
+    left: -13px;
+    background-color: #dcdcdc;
+    border-radius: 2px;
+}
+
+.compare__input-group {
+    display: none;
+}
+
+.compare__input {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: 1;
+    width: 394px;
+    height: 34px;
+    margin: 0;
+    opacity: 0;
+}
+
+.compare__input:focus~.compare__pin {
+    outline: 1px dashed #cdcdcd;
+}
+
+.compare__label {
+    position: relative;
+    max-width: 50%;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.compare__label::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    width: 41px;
+    height: 12px;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    cursor: pointer;
+}
+
+.compare__label::after {
+    position: absolute;
+    top: 7px;
+    width: 35px;
+    height: 6px;
+    background-color: #68b738;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.compare__label--before {
+    padding-right: 60px;
+}
+
+.compare__label--before::before {
+    right: 0;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.compare__label--before::after {
+    content: "";
+    right: 0;
+}
+
+.compare__label--after {
+    padding-left: 60px;
+}
+
+.compare__label--after::before {
+    left: 0;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.compare__label--after::after {
+    left: 0;
+}
+
+.compare__pin {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    margin: -13px 0 0 -13px;
+    background-color: #68b738;
+    border: 13px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
+}
+
+.compare__before-checker:checked~.compare__bar .compare__pin {
+    left: 0;
+}
+
+.compare__after-checker:checked~.compare__bar .compare__label--before::after {
+    content: none;
+}
+
+.compare__after-checker:checked~.compare__bar .compare__label--after::after {
+    content: "";
+}
+
+.compare__after-checker:checked~.compare__bar .compare__pin {
+    left: 100%;
+}
+
+.compare--js .compare__label {
+    cursor: default;
+}
+
+.compare--js .compare__input-group {
+    display: block;
+}
+
+.compare--js .compare__input {
+    cursor: pointer;
+}
+
+.container {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.visually-hidden {
+    position: fixed;
+    right: 100vw;
+}
+
+@media (min-width: 768px) {
+    .compare__pin {
+        left: 50%;
+    }
+    .compare__input-group {
+        display: block;
+    }
+    .stick-param__key {
+        max-width: calc(100% - 20px);
+        padding: 0 8px;
+        font-size: 14px;
+    }
+    .stick-param__value {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .example {
+        padding: 42px 0 0;
+        background-color: #fff;
+    }
+    .example__content {
+        padding-bottom: 40px;
+    }
+    .example__description {
+        margin-bottom: 56px;
+        padding-right: 20px;
+    }
+    .example__params {
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+    }
+    .example__param {
+        width: calc(25% - 16px);
+        margin-right: 42px;
+    }
+    .example__param-addit {
+        width: 300px;
+        margin: 0 0 0 auto;
+        font-size: 20px;
+        text-align: right;
+    }
+    .example__param-addit dd,
+    .example__param-addit dt {
+        display: block;
+        margin-top: 10px;
+    }
+    .compare {
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .compare__list {
+        width: 100%;
+        height: 634px;
+        margin: 0;
+    }
+    .compare__item {
+        height: 100%;
+        background-color: transparent;
+        background-image: -webkit-linear-gradient(#fff 172px, #f2f2f2 172px);
+        background-image: linear-gradient(#fff 172px, #f2f2f2 172px)
+    }
+    .compare__item img {
+        height: 520px;
+    }
+    .compare__item--after {
+        overflow: hidden;
+        background-image: -webkit-linear-gradient(#fff 172px, #eaeaea 172px);
+        background-image: linear-gradient(#fff 172px, #eaeaea 172px);
+    }
+    .compare__bar {
+        position: absolute;
+        bottom: 70px;
+        left: 0;
+        width: 100%
+    }
+    .compare__scale {
+        display: block;
+    }
+    .compare__scale::before {
+        content: "";
+    }
+    .compare__label {
+        max-width: 150px;
+        padding: 0 0 4px;
+        font-size: 20px;
+        border-bottom: 1px solid #c4c4c4;
+        cursor: pointer;
+    }
+    .compare__label::after,
+    .compare__label::before {
+        content: none;
+    }
+    .compare__pin {
+        content: "";
+    }
+    .compare__after-checker:checked~.compare__bar .compare__label--after::after {
+        content: none;
+    }
+    .compare--js .compare__item--after img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 650px;
+        max-width: none;
+    }
+    .container {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .example__title {
+        margin-bottom: 76px;
+        padding: 40px 652px 0 0;
+    }
+    .example__content {
+        padding-top: 70px;
+        padding-bottom: 72px;
+        background-color: #f2f2f2;
+    }
+    .example__inner {
+        min-height: 320px;
+        padding-right: 762px;
+        background-color: #f2f2f2;
+    }
+    .example__description {
+        margin-bottom: 70px;
+    }
+    .example__params {
+        margin: 0;
+    }
+    .example__param {
+        width: 162px;
+    }
+    .example__param-addit {
+        display: -webkit-box;
+        display: flex;
+        width: 100%;
+        margin-top: 48px;
+    }
+    .example__param-addit dd,
+    .example__param-addit dt {
+        margin-right: 64px;
+    }
+    .example__compare {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+    }
+    .compare__list {
+        height: 100%;
+        margin-bottom: 0;
+    }
+    .compare__item {
+        background-image: -webkit-linear-gradient(#fff 218px, #f2f2f2 218px);
+        background-image: linear-gradient(#fff 218px, #f2f2f2 218px)
+    }
+    .compare__item img {
+        margin-top: 24px;
+    }
+    .compare__item--after {
+        background-image: -webkit-linear-gradient(#fff 218px, #eaeaea 218px);
+        background-image: linear-gradient(#fff 218px, #eaeaea 218px);
+    }
+    .compare__bar {
+        top: 586px;
+        bottom: auto;
+    }
+    .container {
+        box-sizing: border-box;
+        width: 1220px;
+        margin-right: auto;
+        // margin-left: auto;
     }
 }

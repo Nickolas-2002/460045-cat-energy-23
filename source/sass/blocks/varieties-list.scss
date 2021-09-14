@@ -16,6 +16,8 @@
     }
     @media (min-width: $desktop-width) {
         margin-top: 92px;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 
@@ -37,6 +39,9 @@
 .varieties-list__item--wrapper {
     margin: 0 auto;
     margin-bottom: 20px;
+    @media (min-width: $desktop-width) {
+        margin: 0;
+    }
 }
 
 @media (min-width: $desktop-width) {
