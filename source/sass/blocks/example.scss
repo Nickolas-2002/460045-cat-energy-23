@@ -404,40 +404,33 @@
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
 }
 
-.compare__before-checker:checked~.compare__bar .compare__pin {
-    left: 0;
-}
-
-.compare__after-checker:checked~.compare__bar .compare__label--before::after {
-    content: none;
-}
-
-.compare__after-checker:checked~.compare__bar .compare__label--after::after {
-    content: "";
-}
-
-.compare__after-checker:checked~.compare__bar .compare__pin {
-    left: 100%;
-}
-
-.compare--js .compare__label {
-    cursor: default;
-}
-
-.compare--js .compare__input-group {
-    display: block;
-}
-
-.compare--js .compare__input {
-    cursor: pointer;
-}
-
+// .compare__before-checker:checked~.compare__bar .compare__pin {
+//     left: 0;
+// }
+// .compare__after-checker:checked~.compare__bar .compare__label--before::after {
+//     content: none;
+// }
+// .compare__after-checker:checked~.compare__bar .compare__label--after::after {
+//     content: "";
+// }
+// .compare__after-checker:checked~.compare__bar .compare__pin {
+//     left: 100%;
+// }
+// .compare--js .compare__label {
+//     cursor: default;
+// }
+// .compare--js .compare__input-group {
+//     display: block;
+// }
+// .compare--js .compare__input {
+//     cursor: pointer;
+// }
 .container {
     margin-right: 20px;
     margin-left: 20px;
 }
 
-.visually-hidden {
+.visually-hidden-image {
     position: fixed;
     right: 100vw;
 }
@@ -537,9 +530,9 @@
     .compare__pin {
         content: "";
     }
-    .compare__after-checker:checked~.compare__bar .compare__label--after::after {
-        content: none;
-    }
+    // .compare__after-checker:checked~.compare__bar .compare__label--after::after {
+    //     content: none;
+    // }
     .compare--js .compare__item--after img {
         position: absolute;
         top: 0;
